@@ -1,0 +1,220 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Images/riz.PNG);
+            background-position: center;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 30px;
+        }
+
+        .text-container {
+            width: 80%;
+            height: 600px;
+            margin: auto;
+            padding: 25px;
+
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #aaa;
+            border-radius: 15px;
+
+            /* Makes the text scroll */
+            overflow-y: auto;
+        }
+
+        .text-container h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .text-container p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        /* Scrollbar */
+        .text-container::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .text-container::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        .text-container::-webkit-scrollbar-track {
+            background: #333;
+        }
+      h1 {
+    color: khaki;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+
+    -webkit-text-stroke: 1px #000;
+
+    text-shadow:
+        2px 2px 0 #000,
+        0 0 8px rgba(189, 183, 108, 0.8);
+
+    padding-bottom: 10px;
+    border-bottom: 2px solid #BDB76C;
+}
+       .text-container button {
+            width: 140px;
+            padding: 7px 19px;
+            font-size: 25px;
+            font-family: 'Brush Script MT', cursive;
+            color: #fff;
+            background: linear-gradient(135deg, #8B7500, #BDB76C);
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: 0.3s ease;           
+            display: block;
+            margin: 30px 0 0 auto;
+        }
+
+        .text-container button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(135deg, #BDB76C, #8B7500);
+        }
+        
+       
+
+.pop-image {
+    position: fixed;
+    right: 10px;
+    top: 85%;
+    transform: translateY(-50%);
+    z-index: 10;
+    
+
+    animation: popIn 1s ease-out, floatImage 3s ease-in-out infinite;
+}
+
+.pop-image img {
+    width: 250px;
+    height: auto;
+    display: block;
+
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
+
+    transition: transform 0.3s ease;
+}
+
+.pop-image img:hover {
+    transform: scale(1.08) rotate(2deg);
+}
+
+
+/* Pop-in animation */
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%) scale(0);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateY(-50%) scale(1.1);
+    }
+
+    100% {
+        transform: translateY(-50%) scale(1);
+    }
+}
+
+
+/* Floating animation */
+@keyframes floatImage {
+    0%, 100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: -15px;
+    }
+}
+
+/* LEFT POPPING IMAGE */
+.pop-image2 {
+    position: fixed;
+    left: 30px;
+    top: 20%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    animation: popLeft 1s ease-out, floatLeft 3s ease-in-out infinite;
+}
+
+.pop-image2 img {
+    width: 220px;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
+
+    transition: transform 0.3s ease;
+}
+
+.pop-image2 img:hover {
+    transform: scale(1.08);
+}
+
+
+/* POP IN FROM LEFT */
+@keyframes popLeft {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%) translateX(-150px) scale(0);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateY(-50%) translateX(20px) scale(1.1);
+    }
+
+    100% {
+        transform: translateY(-50%) translateX(0) scale(1);
+    }
+}
+
+
+/* FLOATING EFFECT */
+@keyframes floatLeft {
+    0%, 100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: -15px;
+    }
+}
+
+/* TEXT HEADER */
+.text-container p.header {
+    font-size: 30px;
+    font-weight: bold;
+    color: #BDB76C;
+    text-align: left;
+    
+    font-style: italic;
+}
+.text-container p.content {
+    font-size: 20px;
+    font-weight: bold;
+    color: beige;
+    text-align: justify, left;
+    margin-left: 15px;
+}

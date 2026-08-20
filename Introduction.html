@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>INTRODUCTION</title>
+		<link rel="stylesheet" type="text/css" href="flipstyle.css" media="all" />
+	</head>
+
+<script>
+
+let page = 1;
+
+function nextContent() {
+
+    if (page === 1) {
+
+        document.getElementById("title").innerHTML = "PURPOSE";
+
+        document.getElementById("description").innerHTML =
+            "This website aims to provide students and other learners with an " +
+       		"easy and interactive way to learn about the life, works, ideas, " +
+			"and contributions of José Rizal. It also aims to connect Rizal’s " +
+			"teachings with present-day issues such as education, patriotism, " +
+			"social inequality, responsible use of social media, misinformation, " +
+			"critical thinking, and good citizenship. Through this website, " +
+			"learners are encouraged to explore history, evaluate information " +
+			"carefully, and apply Rizal’s ideals in their daily lives.";
+        page = 2;
+
+    }
+
+    else if (page === 2) {
+
+		
+        document.getElementById("title").innerHTML = "OVERVIEW";
+
+        document.getElementById("description").innerHTML =
+          "José Rizal remains an important figure in Philippine history " +
+		  "because of his contribution to the development of Filipino nationalism. " +
+		  "His novels, particularly Noli Me Tangere and El Filibusterismo, " +
+		  "revealed social problems and injustices during the Spanish colonial period. " +
+		  "Rizal believed that education and knowledge could help people understand " +
+		  "their rights and contribute to the improvement of society. " +
+		  "His life and works continue to inspire Filipinos to value education, " +
+		  "think critically, respect others, love their country, and become " +
+		  "responsible citizens.";
+
+        page = 3;
+
+    }
+    else {
+
+        // LAST PAGE → GO TO ANOTHER HTML FILE
+        window.location.href = "Life.html";
+
+    }
+
+}
+
+</script>
+
+
+
+
+
+	<body>
+		
+		
+		<label>
+			<input type="checkbox" />
+			<div class="flip-card">
+				<div class="front">
+					<img src="Images/JR.jpg" alt="" />
+					<h1>JOSE RIZAL</h1>
+					<h2>His Life: Childhood and family, Education, Travels and Major Life Events</h2>
+					<b></b>
+					<p>Click to flip</p>
+				</div>
+				<div class="back">
+					<h1 id="title">INTRODUCTION</h1>
+					<hr />
+					<p id="description"> José Rizal was a Filipino national hero, writer, physician, and intellectual who used his knowledge and writings to awaken the love of Filipinos for their country. Through his novels, essays, poems, and actions, he showed the importance of education, courage, critical thinking, and service to the nation.
+					</p>
+					<hr />
+					<p class="click">Click to flip</p>
+				</div>
+			</div>
+		</label>
+			<button type="button" class="home-btn" onclick="location.href='Jose Rizal UI.html'">
+    			Home
+			</button>
+
+			<button type="button" class="next-btn" onclick="nextContent()">
+    			Next
+			</button>
+		
+		
+
+	</body>
+</html>
