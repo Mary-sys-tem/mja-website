@@ -24,7 +24,7 @@ body {
             rgba(0, 0, 0, 0.55),
             rgba(0, 0, 0, 0.55)
         ),
-        url("./Images/gumanaka.jpg");
+        url("./Images/gumanaka.jpg?v=2");
 
     background-repeat: no-repeat;
     background-position: center center;
