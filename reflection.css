@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("Images/reflection.jpg");
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: white;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.reflection-container {
+    width: 40%;
+    max-width: 1000px;
+
+    margin-left: 45%;
+    margin-right: auto;
+
+    padding: 60px 0 100px;
+}
+
+h1 {
+    text-align: center;
+
+    color: #d4af37;
+
+    font-size: 42px;
+    margin-bottom: 50px;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #d4af37;
+
+    font-size: 24px;
+    line-height: 1.4;
+
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+
+    text-align: justify;
+
+    color: #f1f1f1;
+}
+
+/* HOME BUTTON */
+
+.home-button {
+    display: block;
+
+    width: fit-content;
+
+    margin: 50px auto 0;
+
+    padding: 12px 32px;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    color: #d4af37;
+
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.home-button:hover {
+    background: #d4af37;
+    color: black;
+}

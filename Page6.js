@@ -28,5 +28,5 @@ lastPage.appendChild(nextButton);
 
 
 function nextPage() {
-    window.location.href = "interactive.html";
+    window.location.href = "index.html";
 }

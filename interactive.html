@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FACT OR FICTION</title>
+
+    <link rel="stylesheet" href="interactive.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <h1>FACT OR FICTION</h1>
+
+        <p class="subtitle">
+            Interactive Learning Activity
+        </p>
+
+        <div class="score">
+            Score: <span id="score">0</span>
+        </div>
+
+        <div class="question-number">
+            Question <span id="questionNumber">1</span> of 5
+        </div>
+
+        <div class="question-box">
+            <p id="question">
+                Jose Rizal was born on June 19, 1861.
+            </p>
+        </div>
+
+        <div class="buttons">
+
+            <button class="answer-button" onclick="checkAnswer('fact')">
+                FACT
+            </button>
+
+            <button class="answer-button" onclick="checkAnswer('fiction')">
+                FICTION
+            </button>
+
+        </div>
+
+        <div id="result"></div>
+
+        <button id="nextButton" onclick="nextQuestion()">
+            NEXT
+        </button>
+
+        <button class="home-button" onclick="location.href='index.html'">
+             HOME
+        </button>
+
+    </div>
+    
+
+    <script src="interactive.js"></script>
+
+</body>
+
+</html>
